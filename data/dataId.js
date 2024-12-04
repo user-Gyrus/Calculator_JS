@@ -1,4 +1,4 @@
-const numbers = [
+export const numbers = [
     {
         id: 'one',
         value: 1
@@ -37,7 +37,7 @@ const numbers = [
     }
 ];
 
-const operators = [
+export const operators = [
     {
         id: 'multiply',
         symbol: '*'

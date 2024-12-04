@@ -1,3 +1,28 @@
-body {
-    padding: 200px 200px 200px 200px;
+.calc_container {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-right: 450px;
+    padding-left: 450px;
+}
+
+.shadow {
+    background-color: rgb(51, 51, 51);
+    border-radius: 6px;
+}
+
+.header_area {
+    display: block;
+    background-color: rgb(240, 240, 240);
+    color: white;
+    height: 100px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(51, 51, 51);
+    border-style: solid;
+}
+
+.button_area {
+    display: block;
+    height: 300px;
+    padding: 15px 10px 0 10px;
 }

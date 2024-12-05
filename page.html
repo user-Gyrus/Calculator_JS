@@ -7,40 +7,33 @@
     <link rel="stylesheet" href="styles/page.css">
 </head>
 <body>
-    <div class="calc_container">
-        <!-- two vertical layouts -->
-         <div class="shadow">
-            <div class="header_area">
-                
-            </div>
-            <div class="button_area">
-                <div class="operator_area">
-                    <button id="multiply" class="operator">*</button>
-                    <button id="divide" class="operator">/</button>
-                    <button id="add" class="operator">+</button>
-                    <button id="subtract" class="operator">-</button>
-                </div>
-                <div class="number_area">
-                    <button id="zero" class="number">0</button>
-                    <button id="one" class="number">1</button>
-                    <button id="two" class="number">2</button>
-                    <button id="three" class="number">3</button>
-                    <button id="four" class="number">4</button>
-                    <button id="five" class="number">5</button>
-                    <button id="six" class="number">6</button>
-                    <button id="seven" class="number">7</button>
-                    <button id="eight" class="number">8</button>
-                    <button id="nine" class="number">9</button>
-                    <button id="dot" class="dot">.</button>
-                    <button id="equal" class="equal">=</button>
-                </div>
-                <div class="clear_all">
-                    <button class="clear">C</button>
-                </div>
-            </div>
-         </div>
-        
-    </div>
+    <section class="calculator">
+        <form>
+            <input type="text" class="screen" readonly>
+        </form>
+
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" data-num="*">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/">/</button>
+            <button type="button" class="btn btn-yellow" data-num="+">+</button>
+            <button type="button" class="btn btn-yellow" data-num="-">-</button>
+
+            <button type="button" class="btn btn-grey" data-num="9">9</button>
+            <button type="button" class="btn btn-grey" data-num="8">8</button>
+            <button type="button" class="btn btn-grey" data-num="7">7</button>
+            <button type="button" class="btn btn-grey" data-num="6">6</button>
+            <button type="button" class="btn btn-grey" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" data-num="4">4</button>
+            <button type="button" class="btn btn-grey" data-num="3">3</button>
+            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="1">1</button>
+            <button type="button" class="btn btn-grey" data-num="0">0</button>
+            <button type="button" class="btn btn-grey" data-num=".">.</button>
+
+            <button type="button" class="btn btn-equal">=</button>
+            <button type="button" class="btn btn-clear">C</button>
+        </div>
+    </section>
 
     <script type="module" src="scripts/page.js"></script>
 </body>

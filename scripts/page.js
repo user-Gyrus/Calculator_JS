@@ -1,20 +1,32 @@
-import {numbers, operators} from '../data/dataId.js';
-import { solveData } from '../utils/solve.js';
+(function () {
+    let screen = document.querySelector('.screen');
+    let buttons = document.querySelectorAll('.btn');
+    let clear = document.querySelector('.btn-clear');
+    let equal = document.querySelector('.btn-equal');
 
-let htmlContent = '';
-
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-        if (button.classList.contains('clear')) {
-            htmlContent = '';
-        }
-        else if (button.classList.contains('equal')) {
-
-        }
-        else htmlContent += button.textContent;
-
-        document.querySelector('.header_area').innerHTML = htmlContent;
+    buttons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            const value = e.target.dataset.num;
+            if (value !== undefined) {
+                screen.value += value;
+            }
+        });
     });
-});
+
+    equal.addEventListener('click', (e) => {
+        if (screen.value === '') {
+            screen.value = '';
+        } else {
+            try {
+                let answer = eval(screen.value); 
+                screen.value = answer;
+            } catch {
+                screen.value = 'Error'; 
+            }
+        }
+    });
+
+    clear.addEventListener('click', (e) => {
+        screen.value = '';
+    });
+})();
